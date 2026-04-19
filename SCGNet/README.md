@@ -6,7 +6,7 @@
 
 ## Overview
 
-SCGNet is a deep learning framework for **remote sensing semantic change detection**. It captures semantic correlations between bi-temporal images through three novel modules:
+SCGNet is a deep learning network for **remote sensing semantic change detection**. It works through three novel modules:
 
 - **SGF** (Semantic-Guided Fusion)
 - **SCRE** (Semantically Consistent Region Enhancement)
@@ -24,7 +24,7 @@ SCGNet is a deep learning framework for **remote sensing semantic change detecti
 ## Datasets
 
 - **SECOND**
-- **Landsat**
+- **Landsat-SCD**
 
 ## Training
 
@@ -32,7 +32,7 @@ SCGNet is a deep learning framework for **remote sensing semantic change detecti
 # Train on SECOND dataset
 python train_SECOND.py
 
-# Train on Landsat dataset
+# Train on Landsat-SCD dataset
 python train_Landsat.py
 ```
 
