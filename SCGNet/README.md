@@ -11,9 +11,9 @@ If you have any questions, you can send me an email. My mail address is 24171213
 </p>
 SCGNet is a deep learning network for remote sensing semantic change detection. It works through three modules:
 
-- **SGF** (Semantic-Guided Fusion)
-- **SCE** (Semantic Consistency Enhancement)
-- **MSCA** (Multi-scale Change Activation)
+- **SGF** (Semantic-Guided Fusion Module)
+- **SCE** (Semantic Consistency Enhancement Module)
+- **MSCA** (Multi-Scale Change Activation Module)
 
 ## Requirements
 
