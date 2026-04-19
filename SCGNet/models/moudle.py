@@ -30,7 +30,7 @@ class SGF(nn.Module):
     def forward(self, x1, x2):
         #cat
         x = torch.cat((x1, x2), dim=1)
-        x1_proj = self.conv_mask(x1)  # 压缩通道
+        x1_proj = self.conv_mask(x1)
         x2_proj = self.conv_mask(x2)
         mask = (1 - cosine_similarity(x1_proj, x2_proj)) / 2  # 计算余弦相似度生成掩码
         cat_fusion = self.cat_fusion(x * mask)  # 语义引导融合
