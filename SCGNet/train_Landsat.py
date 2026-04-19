@@ -20,7 +20,7 @@ os.environ['CUDA_VISIBLE_DEVICES'] = '0'
 from datasets import RS_Landsat as RS
 from models.SCGNet import SCGNet as Net
 NET_NAME = 'SCGNet'
-DATA_NAME = 'RS_Landsat'
+DATA_NAME = 'Landsat'
 ###############################################
 args = {
     'train_batch_size': 8,
