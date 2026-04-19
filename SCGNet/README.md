@@ -1,7 +1,6 @@
 # SCGNet
 
-This repository provides the code for the methods and experiments presented in our paper '**SCGNet: Semantic Correlation Guided Network for Remote Sensing Semantic Change Detection**'. 
-**IEEE Transactions on Geoscience and Remote Sensing (TGRS), 2026**
+This repository provides the code for the method in our paper '**SCGNet: Semantic Correlation Guided Network for Remote Sensing Semantic Change Detection**'. **IEEE Transactions on Geoscience and Remote Sensing (TGRS), 2026**
 
 If you have any questions, you can send me an email. My mail address is 24171213924@stu.xidian.edu.cn.
 
