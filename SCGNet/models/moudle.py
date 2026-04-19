@@ -41,10 +41,10 @@ class SGF(nn.Module):
     
         return cat_diff_fusion        
         
-#Semantically consistent region enhancement module    
-class SCRE(nn.Module):
+#Semantic consistent enhancement module    
+class SCE(nn.Module):
     def __init__(self, dim):
-        super(SCRE, self).__init__()
+        super(SCE, self).__init__()
 
         self.dim = dim
 
