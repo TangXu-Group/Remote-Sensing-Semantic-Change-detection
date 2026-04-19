@@ -6,6 +6,9 @@
 
 ## Overview
 
+<p align="center">
+  <img src="images/SCGNet.png" width="800">
+</p>
 SCGNet is a deep learning network for **remote sensing semantic change detection**. It works through three novel modules:
 
 - **SGF** (Semantic-Guided Fusion)
