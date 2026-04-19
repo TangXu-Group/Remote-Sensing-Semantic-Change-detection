@@ -41,7 +41,7 @@ class SGF(nn.Module):
     
         return cat_diff_fusion        
         
-#Semantic consistent enhancement module    
+#Semantic Consistency Enhancement Module    
 class SCE(nn.Module):
     def __init__(self, dim):
         super(SCE, self).__init__()
