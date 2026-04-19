@@ -4,7 +4,7 @@ import torch.nn as nn
 from torchvision import models
 from torch.nn import functional as F
 from utils.misc import initialize_weights
-from models.moudle import SGF, SCRE, MSCA
+from models.moudle import SGF, SCE, MSCA
 
 def conv1x1(in_planes, out_planes, stride=1):
     return nn.Conv2d(in_planes, out_planes, kernel_size=1, stride=stride, bias=False)
@@ -103,10 +103,10 @@ class SCGNet(nn.Module):
 
         self.SGF4 = SGF(in_channels=128)
         self.SGF1 = SGF(in_channels=64)
-        self.SCRE = SCRE(dim=128)
+        self.SCE = SCE(dim=128)
         self.MSCA = MSCA(dim=128, pool_rates=[1, 2, 4])
             
-        initialize_weights(self.Dec1, self.Dec2, self.classifier1, self.classifier2, self.resCD, self.DecCD, self.classifierCD, self.SGF4, self.SGF1, self.SCRE, self.MSCA)
+        initialize_weights(self.Dec1, self.Dec2, self.classifier1, self.classifier2, self.resCD, self.DecCD, self.classifierCD, self.SGF4, self.SGF1, self.SCE, self.MSCA)
         
     
     def _make_layer(self, block, inplanes, planes, blocks, stride=1):
@@ -147,7 +147,7 @@ class SCGNet(nn.Module):
 
         x1 = self.Dec1(x1, x1_low)
         x2 = self.Dec2(x2, x2_low)
-        x1, x2 = self.SCRE(x1, x2, xc)
+        x1, x2 = self.SCE(x1, x2, xc)
         xc = self.MSCA(xc, x1, x2)
         
         change = self.classifierCD(xc)
