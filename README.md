@@ -1,1 +1,1 @@
-# Remote-Sensing-Semantic-Change-detection
+# Remote-Sensing-Semantic-Change-Detection
